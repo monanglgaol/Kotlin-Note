@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="3dp"
+        app:cardUseCompatPadding="true">
+
+    <LinearLayout
+            android:layout_margin="5dp"
+            android:gravity="end|bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/titleTv"
+                android:text="Title"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/descTv"
+                android:text="There may be a very long description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageButton
+                    android:id="@+id/deleteBtn"
+                    android:background="@null"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_delete"
+                    android:scaleType="fitXY"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            <ImageButton
+                    android:id="@+id/editBtn"
+                    android:background="@null"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_edit"
+                    android:scaleType="fitXY"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            <ImageButton
+                    android:id="@+id/copyBtn"
+                    android:background="@null"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_copy"
+                    android:scaleType="fitXY"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+            <ImageButton
+                    android:id="@+id/shareBtn"
+                    android:background="@null"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ic_action_share"
+                    android:scaleType="fitXY"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
